@@ -212,8 +212,8 @@ def run_net(tr):
 
 
     # make synapse active at beginning
-    if not tr.strct_active:
-        SynEE.run_regularly(tr.synEE_p_activate, dt=tr.T, when='start',
+    #if not tr.strct_active:
+    SynEE.run_regularly(tr.synEE_p_activate, dt=tr.T, when='start',
                             order=-100)
 
     # synaptic scaling
